@@ -1,0 +1,161 @@
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+@media (max-width: 900px) {
+  html, body {
+    height: 130vh;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: "Poppins";
+}
+
+#wrapper {
+  background-color: #ff7a7a;
+  height: 100%;
+  width: 100%;
+}
+
+#img {
+  background: url(./images/bg-intro-desktop.png);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 1em;
+  display: grid;
+  margin: 0 5em;
+}
+@media (min-width: 900px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    margin: 0.5em;
+    padding: 0.5em;
+    grid-template-rows: 1fr 1.5fr;
+  }
+}
+
+#text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em;
+}
+@media (max-width: 900px) {
+  #text-section {
+    text-align: center;
+    justify-content: space-around;
+    padding: 1em;
+  }
+}
+#text-section h1 {
+  font-size: 3.5em;
+  color: #fff;
+  margin: 0.2em 0;
+  line-height: 1.3em;
+}
+@media (max-width: 900px) {
+  #text-section h1 {
+    font-size: 2.5em;
+  }
+}
+#text-section p {
+  font-size: 16px;
+  color: #fff;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 2em;
+}
+#form-section #trial-text {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  margin: 1.5em 0;
+  background-color: #6055a5;
+  border-radius: 10px;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.15);
+}
+#form-section #trial-text p {
+  margin: 0;
+  color: #fff;
+}
+#form-section #trial-text p span {
+  font-weight: 700;
+}
+#form-section form {
+  padding: 2em;
+  background-color: #fff;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 900px) {
+  #form-section form {
+    padding: 1em;
+  }
+}
+#form-section form div {
+  margin: 1.5em 0;
+}
+#form-section form div input {
+  height: 4em;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0 2em;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-size: 1em;
+}
+#form-section form div input:focus {
+  outline: none;
+  border: 2px solid #6055a5;
+  caret-color: #6055a5;
+  color: #222;
+}
+#form-section form button {
+  width: 100%;
+  border: none;
+  background-color: #38cc8c;
+  color: #fff;
+  padding: 1em;
+  border-radius: 7px;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  box-shadow: 0 -5px rgba(0, 0, 0, 0.15) inset;
+}
+#form-section form button:hover {
+  cursor: pointer;
+}
+#form-section form #terms {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 0.8em;
+  color: #b9b6d3;
+  font-weight: 500;
+}
+#form-section form #terms span {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
